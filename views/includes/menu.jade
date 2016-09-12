@@ -1,17 +1,47 @@
-.container
-	.navbar-header
-		button.navbar-toggle.collapsed(data-target='#bs-example-navbar-collapse-1', data-toggle='collapse', type='button')
-			span.sr-only Toggle navigation
-			span.icon-bar
-			span.icon-bar
-			span.icon-bar
-		a.navbar-brand.page-scroll(href='/')
-			img(src= records.site.sitedata[0].logo)
-	#bs-example-navbar-collapse-1.collapse.navbar-collapse
-		ul.nav.navbar-nav.navbar-right
-			li
-				a.page-scroll(href='/') Home
-			- each menuitem in records.menu.result
-				li
-					a.page-scroll(href= menuitem.url)= menuitem.item
-
+#header-top.hidden-xs
+    .container
+        .row
+            .col-md-6.col-sm-8
+                ul#contact-top.p-0.mb-0
+                    li Have any question?
+                    li
+                        i.mdi.mdi-phone.icon.icon-left
+                        | 01698 828222
+                    li
+                        i.mdi.mdi-email.icon.icon-left
+                        a(href="mailto:enquiries@gascert.co.uk") enquiries@gascert.co.uk
+            .col-md-6.col-sm-4
+                ul#login-top.p-0.mb-0.pull-right
+                    li
+                        i.mdi.mdi-account.icon.icon-left
+                        a(href="/") Login / Sign Up
+#header-bottom
+    .container
+        .navbar-header
+            button.navbar-toggle.collapsed(data-target='#bs-example-navbar-collapse-1', data-toggle='collapse', type='button')
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a.navbar-brand.page-scroll(href='/')
+                img(src= records.site.sitedata[0].logo)
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+                li.active
+                    a(href='/') Home
+                li
+                    a(href='/') About
+                li
+                    a(href='/') Enquire
+                li
+                    a(href='/') Affiliated
+                li
+                    a(href='/') Downloads
+                li
+                    a(href='/') Contact
+                li.divider
+                    span
+                li
+                    a.menu-cart(href='/') 
+                        i.mdi.mdi-cart
+                        span.hidden-sm.hidden-md.hidden-lg Shop

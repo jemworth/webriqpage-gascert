@@ -5,10 +5,202 @@ base()
 
 body
   padding: 0px
-  font-family: "Open sans", Arial, sans-serif
 
-header, .footer
-  text-align:center
+#header #header-top
+    background #03a9f4
+    padding 10px 0
+    
+    ul li,ul li a
+        font-weight 600
+        font-size 13px
+        color #b3e5fc
+        text-decoration none !important
+    
+    ul li a:hover
+        color #fff
+    
+    #contact-top li
+        display inline-block
+        margin-right 10px 
+        
+    ul li .icon.icon-left
+        margin-right 8px
+        font-size 16px
 
-header
-  padding: 5em 0em
+#header-bottom
+    background #fff
+    
+    .navbar-nav > li > a
+        text-transform uppercase 
+        font-size 14px
+        color #727272
+        
+    .navbar-nav > li.active > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:focus
+        color #03a9f4
+        background transparent
+        
+    a.menu-cart
+        color #03a9f4 !important
+        font-size 20px !important
+        
+#home-slider
+    background: url(../img/cover-slider-bg.jpg) center center
+    background-size cover
+    
+    h3
+        line-height 38px
+        font-weight 300
+        
+#footer
+    background #03a9f4
+    color #fff
+    font-size 14px
+    
+    a,h4
+        color #fff
+        
+    .copyright-links
+        text-align right
+        
+    .copyright-links li
+          display inline-block
+          margin-left 20px
+          
+    #footer-layout-box
+        padding 70px 0
+        
+        h4
+            margin-bottom 30px
+        
+        ul.arrow li
+            margin-bottom 10px
+
+        ul.arrow li:before
+            color #b3e5fc
+            
+        .footer-social-media li
+            display inline-block
+            margin-right 8px
+                
+        .footer-social-media li a
+            border 1px solid #b3e5fc
+            color #b3e5fc !important
+            padding 6px 8px
+            border-radius 50%
+            font-size 18px
+                
+        .footer-social-media li a:hover
+            color #fff !important
+            border-color #fff
+            
+        .normal-list li
+            line-height:30px
+            
+        .normal-list li i
+          font-size 18px
+          color #b3e5fc
+
+@media (min-width:768px)
+
+    #header-bottom
+        padding 13px 0
+          
+        .navbar-brand
+            padding 0 !important
+            
+        .navbar-nav > li
+             margin-left 25px
+
+        .navbar-nav > li:first-child
+             margin-left 0px
+             
+        .navbar-nav > li > a
+            padding 26px 0 !important
+            
+        .divider
+            padding-top 25px 
+            height 100%
+            background transparent
+
+        .divider span
+            width 1px
+            display block
+            height 25px
+            vertical-align middle
+            background #e5e5e5
+    #home-slider       
+        padding 130px 0
+        
+        .cover-caption
+            padding 9% 0
+            
+@media (min-width:992px)
+
+    #header-bottom
+            
+        .navbar-nav > li
+             margin-left 35px
+    #footer-layout-box
+        
+        #layout-box-2 
+            margin-left 25px
+        
+        #layout-box-3, #layout-box-4
+            margin-left 20px
+        
+
+@media  (max-width:767px)
+
+    .row > div
+        margin-bottom 40px
+                
+    .row > div:last-child
+            margin-bottom 0
+                
+    #header-bottom
+        
+        .navbar-toggle
+            padding 35px 15px
+            margin 0
+            display block
+  
+        .navbar-toggle span.icon-bar
+            background #0288d1 
+            height 4px
+            width 35px
+            margin-bottom 6px
+            border-radius 5px
+            
+        #bs-example-navbar-collapse-1
+            background #0288d1
+
+        #bs-example-navbar-collapse-1 ul
+            margin 15px 30px
+  
+        #bs-example-navbar-collapse-1 ul li
+            padding 8px 0
+            border-top 1px solid #0592d2
+
+        #bs-example-navbar-collapse-1 ul li:first-child
+            border-top 0px
+
+        #bs-example-navbar-collapse-1 ul li .menu-cart
+            font-size 14px !important
+
+        #bs-example-navbar-collapse-1 ul li a
+            color #fff !important 
+            text-align center
+            font-size 16px 
+  
+        #bs-example-navbar-collapse-1 ul li.divider, #bs-example-navbar-collapse-1 ul li .menu-cart i
+            display none
+            
+    #home-slider       
+        padding 100px 0
+        
+        .row > div img
+            width:220px
+
+    #copyright,#copyright ul,#home-slider .row > div
+        text-align center
+               

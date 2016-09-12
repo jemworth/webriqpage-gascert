@@ -1,15 +1,83 @@
-section#copyright
-	div.container
-		div.row
-			div.col-lg-12
-				p= records.site.sitedata[0].footer
+section#footer-layout-box
+    .container
+        .row
+            #layout-box-1.col-md-4.col-sm-4
+                h4.title.text-uppercase.semi-bold About Us
+                p Formed in 1997 Gas Certification Company Limited initially operated providing ACS Training & Assessment to engineers wishing to work in the gas industry.
+                ul.footer-social-media.pl-0.mt-25
+                    li
+                        a(href="/")
+                            i.mdi.mdi-facebook
+                    li
+                        a(href="/")
+                            i.mdi.mdi-twitter
+                    li
+                        a(href="/")
+                            i.mdi.mdi-google-plus
+            #layout-box-2.col-md-2.col-sm-2
+                h4.title.text-uppercase.semi-bold Company
+                ul.arrow.pl-0
+                    li
+                        a(href="/about-us") About
+                    li
+                        a(href="/course-enquiries") Enquire
+                    li
+                        a(href="/affiliated-links") Affiliated
+                    li
+                        a(href="/downloads") Downloads
+                    li
+                        a(href="/contact-us") Contact
+                    li
+                        a(href="/") Shop
+            #layout-box-3.col-md-2.col-sm-3
+                h4.title.text-uppercase.semi-bold Courses
+                ul.arrow.pl-0
+                    li
+                        a(href="/") Gas Course
+                    li
+                        a(href="/course-enquiries") Electrical Course
+                    li
+                        a(href="/affiliated-links") Energy Course
+                    li
+                        a(href="/downloads") Oil Course
+                    li
+                        a(href="/contact-us") Water Courses
+                    li
+                        a(href="/") Safety Audits Course
+                    li
+                        a(href="/") Gas Safety Course
+            #layout-box-4.col-md-3.col-sm-3
+                h4.title.text-uppercase.semi-bold Contact
+                p Unit 37, Block 5, Third Road, Blantyre Industrial Estate, Blantyre G72 0UP
+                ul.normal-list.pl-0.mt-25
+                    li
+                        i.mdi.mdi-phone.icon.icon-left 
+                        | 01698 828222
+                    li
+                        i.mdi.mdi-printer.icon.icon-left 
+                        | 01698 828222
+                    li
+                        i.mdi.mdi-email.icon.icon-left 
+                        a(href="mailto:enquiries@gascert.co.uk") enquiries@gascert.co.uk
+section#copyright.pb-20
+    .container
+        hr
+        .row
+            .col-xs-12.col-sm-5.col-md-6.pull-right
+                ul.copyright-links.pl-0
+                    li
+                        a(href="/privacy-policy") Privacy
+                    li
+                        a(href="/terms-and-conditions") Terms
+                    li
+                        a(href="/sitemap.xml") Sitemap
+            .col-xs-12.col-sm-7.col-md-6
+                p= records.site.sitedata[0].footer
 
+script(type="text/javascript", src="../js/webriq-bootstrap-material-ui.min.js")
 
-	!= js()
-
-
-	<!-- Google Analytics -->
-	script(type="text/javascript")
-		!= records.site.sitedata[0].analytics
+<!-- Google Analytics -->
+script(type="text/javascript")
+    != records.site.sitedata[0].analytics
 
 
