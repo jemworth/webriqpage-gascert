@@ -51,6 +51,41 @@ body
         line-height 38px
         font-weight 300
         
+#home-links 
+        
+    > div
+        text-align center
+        padding 55px 0 55px 0
+    
+    div > a
+        display block
+        font-size 16px !important
+        text-transform uppercase
+        color #fff !important
+        margin-top 10px
+        text-decoration none
+    
+    .column-links1 
+        background #03a9f4
+    
+    .column-links2
+        background:#b3e5fc
+    
+    .column-links3
+        background:#8bc34a
+    
+    .column-links4 
+        background:#aed46f
+        
+#home-course-list
+    background #f6f6f6
+    
+    .column-container
+        height auto
+        
+#home-testimonial
+    background #f6f6f6
+
 #footer
     background #03a9f4
     color #fff
@@ -99,7 +134,15 @@ body
         .normal-list li i
           font-size 18px
           color #b3e5fc
+          
+@media (min-width:640px)
 
+    #home-links 
+        
+        > div
+            float left
+            width 50% 
+            
 @media (min-width:768px)
 
     #header-bottom
@@ -128,11 +171,17 @@ body
             height 25px
             vertical-align middle
             background #e5e5e5
+            
     #home-slider       
         padding 130px 0
         
         .cover-caption
             padding 9% 0
+            
+    #home-course-list
+    
+        .column-container
+            padding 70px 40px 0px 40px
             
 @media (min-width:992px)
 
@@ -140,6 +189,12 @@ body
             
         .navbar-nav > li
              margin-left 35px
+             
+    #home-course-list
+    
+        .column-container
+            padding 40px 30px 0px 30px         
+
     #footer-layout-box
         
         #layout-box-2 
@@ -148,6 +203,12 @@ body
         #layout-box-3, #layout-box-4
             margin-left 20px
         
+@media (min-width:1200px)
+
+    #home-course-list
+    
+        .column-container
+            padding 50px 40px 0px 40px
 
 @media  (max-width:767px)
 
@@ -156,6 +217,9 @@ body
                 
     .row > div:last-child
             margin-bottom 0
+            
+    #login-top
+            float none
                 
     #header-bottom
         
@@ -194,13 +258,17 @@ body
   
         #bs-example-navbar-collapse-1 ul li.divider, #bs-example-navbar-collapse-1 ul li .menu-cart i
             display none
-            
+
     #home-slider       
         padding 100px 0
         
         .row > div img
             width:220px
+            
+    #home-course-list
+    
+        .column-container
+            padding 80px 40px 80px 40px
 
-    #copyright,#copyright ul,#home-slider .row > div
-        text-align center
-               
+    #copyright, #copyright ul, #home-slider .row > div
+        text-align center !important

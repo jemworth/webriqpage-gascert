@@ -54,18 +54,15 @@ section#footer-layout-box
                         i.mdi.mdi-phone.icon.icon-left 
                         | 01698 828222
                     li
-                        i.mdi.mdi-printer.icon.icon-left 
-                        | 01698 828222
-                    li
                         i.mdi.mdi-email.icon.icon-left 
                         a(href="mailto:enquiries@gascert.co.uk") enquiries@gascert.co.uk
 section#copyright.pb-20
     .container
         hr
         .row
-            .col-xs-12.col-sm-5.col-md-6.pull-right
+            .col-xs-12.col-sm-5.col-md-6.pull-right.mb-0
                 ul.copyright-links.pl-0
-                    li
+                    li.ml-0
                         a(href="/privacy-policy") Privacy
                     li
                         a(href="/terms-and-conditions") Terms
@@ -75,6 +72,18 @@ section#copyright.pb-20
                 p= records.site.sitedata[0].footer
 
 script(type="text/javascript", src="../js/webriq-bootstrap-material-ui.min.js")
+script(type="text/javascript", src="../js/lightcase.js")
+script(type="text/javascript", src="../js/jquery.events.touch.js")
+script.
+    jQuery(document).ready(function($) {
+        $('a[data-rel^=lightcase]').lightcase({
+            swipe: true,
+            transition : 'scrollHorizontal',
+            showSequenceInfo : true,
+            fullScreenModeForMobile: true
+        });
+    });
+
 
 <!-- Google Analytics -->
 script(type="text/javascript")

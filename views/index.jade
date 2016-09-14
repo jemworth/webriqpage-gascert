@@ -2,17 +2,215 @@ extends layout
 
 block content
 
-	#home-company.pt-70.pb-70
-		.container
-			.row 
-				.col-md-6
-					.column-container
-						.column-img.mb-20
-							img(src="../img/gascert-home.jpg", style="max-width:100%;")
-						.column-title.mb-15
-							h3.text-uppercase.m-0 Gas Certification Company Limited
-						.column-text.mb-25
-							p Gas Certification Company Limited and Energy Certification Company Limited offer a range of courses covering a wide spread of the energy industry from our training centre in Glasgow, Scotland.
-						.column-links
-							a(href="/").btn.btn-primary.eq-ui-waves-light Read More
-				.col-md-6
+    #home-company.pt-80.pb-80
+        .container
+            .row 
+                .col-md-6.col-sm-6
+                    #home-about.column-container
+                        .column-img.mb-20
+                            img(src="../img/gascert-home.jpg", style="width:100%;")
+                        .column-title.mb-15
+                            h3.text-uppercase.m-0 Gas Certification Company Limited
+                        .column-text.mb-25
+                            p Gas Certification Company Limited and Energy Certification Company Limited offer a range of courses covering a wide spread of the energy industry from our training centre in Glasgow, Scotland.
+                        .column-links
+                            a(href="/").btn.btn-primary.eq-ui-waves-light Read More
+                .col-md-6.col-sm-6
+                    #home-links.column-container
+                        .column-links.column-links1.hi-icon-effect-6
+                            i.hi-icon.fa.fa-book
+                                a(href="/") 
+                            a(href="/") Downloads
+                        .column-links.column-links2.hi-icon-effect-6
+                            i.hi-icon.fa.fa-shopping-cart
+                                a(href="/")
+                            a(href="/") Visit Our Shop
+                        .column-links.column-links3.hi-icon-effect-6
+                            i.hi-icon.fa.fa-mobile
+                                a(href="/") 
+                            a(href="/") Get in Touch
+                        .column-links.column-links4.hi-icon-effect-6
+                            i.hi-icon.fa.fa-comments-o
+                                a(href="/")
+                            a(href="/") Enroll Now
+
+    #home-course-list.pt-80.pb-80
+        .container
+            .row
+                .col-md-12
+                    .grid
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                            .column-container
+                                h1.mt-0.mb-20.white-text List of Courses
+                                p.white-text Providing ACS Training & Assessment to engineers wishing to work in the gas industry
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                              figure.effect-goliath
+                                img(src='../img/gas-course.jpg', alt='img24')
+                                figcaption
+                                  h4 Gas Course
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                              figure.effect-goliath
+                                img(src='../img/electrical-course.jpg', alt='img24')
+                                figcaption
+                                  h4 Electrical Course
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                              figure.effect-goliath
+                                img(src='../img/energy-course.jpg', alt='img24')
+                                figcaption
+                                  h4 Energy/Renewables Course
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                            figure.effect-goliath
+                                img(src='../img/oil-course.jpg', alt='img23')
+                                figcaption
+                                  h4 Oil Course
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                              figure.effect-goliath
+                                img(src='../img/water-course.jpg', alt='img24')
+                                figcaption
+                                  h4 Water Course
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                              figure.effect-goliath
+                                img(src='../img/safety-audits-course.jpg', alt='img24')
+                                figcaption
+                                  h4 Gas Safety Audits
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        .col-md-3.col-sm-6.col-xs-6.col-xxs-12.p-0
+                              figure.effect-goliath
+                                img(src='../img/gas-safety-course.jpg', alt='img24')
+                                figcaption
+                                  h4 Gas Safety Awareness
+                                  p Training & Assessment for gas engineers to gain qualification to work
+                                  a(href='#') View more
+                        div(style="clear:both;")
+    #home-events.pt-80.pb-80
+        .container
+            .row
+                .col-md-12
+                    .title-container
+                        h2.title.text-center Events & Achievements
+                    .sub-title-container.text-center
+                        h5.sub-title.text-center Past events & achievement photos
+            .row.showcase-list
+                .col-md-4.col-sm-6.col-xs-6.col-xxs-12.showcase-list-top
+                    a(href='../img/events/past-1.jpg', data-rel='lightcase:events', title='We Won The Corgi Award 2007')
+                        img(src="../img/events/past-1-sm.jpg")
+                        span We Won The Corgi Award 2007
+                .col-md-4.col-sm-6.col-xs-6.col-xxs-12.showcase-list-top
+                    a(href='../img/events/past-2.jpg', data-rel='lightcase:events', title='Scottish Enterprise Lanarkshire Business Excellence Award 2004')
+                        img(src="../img/events/past-2-sm.jpg")
+                        span Scottish Enterprise Lanarkshire Business Excellence Award 2004
+                .col-md-4.col-sm-6.col-xs-6.col-xxs-12.showcase-list-top
+                    a(href='../img/events/past-3.jpg', data-rel='lightcase:events', title='Title 3')
+                        img(src="../img/events/past-3-sm.jpg")
+                        span Title 3
+                .col-md-4.col-sm-6.col-xs-6.col-xxs-12.showcase-list-bottom
+                    a(href='../img/events/past-4.jpg', data-rel='lightcase:events', title='Title 4')
+                        img(src="../img/events/past-4-sm.jpg")
+                        span Title 4
+                .col-md-4.col-sm-6.col-xs-6.col-xxs-12.showcase-list-bottom
+                    a(href='../img/events/past-5.jpg', data-rel='lightcase:events', title='Title 5')
+                        img(src="../img/events/past-5-sm.jpg")
+                        span Title 5
+                .col-md-4.col-sm-6.col-xs-6.col-xxs-12.showcase-list-bottom
+                    a(href='../img/events/past-6.jpg', data-rel='lightcase:events', title='Title 6')
+                        img(src="../img/events/past-6-sm.jpg")
+                        span Title 6
+    #home-testimonial.pt-80.pb-80
+        .container
+            .row
+                .col-md-12
+                    .title-container
+                        h2.title.text-center.light-black Clients Words
+                    .sub-title-container.text-center.light-black 
+                        h5.sub-title.text-center Our Clients always speaks for us
+                .col-md-12
+                    #carousel-example-generic.carousel.slide.carousel-fade(data-ride='carousel')
+                        .carousel-inner(role='listbox')
+                            .item.active
+                                .column-container
+                                    .testimonial-text “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec feugiat sem. Suspendisse eget enim tortor. Cras blandit, ligula at sagittis posuere, lacus leo convallis quam, ut suscipit massa nunc ut eros. ”
+                                    .testimonial-image 
+                                        img(src='../img/testimonial-image.jpg')
+                                    .testimonial-name 
+                                        span Will Power - 
+                                            em CEO
+                            .item
+                                .column-container
+                                    .testimonial-text “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec feugiat sem. Suspendisse eget enim tortor. Cras blandit, ligula at sagittis posuere, lacus leo convallis quam, ut suscipit massa nunc ut eros. ”
+                                    .testimonial-image 
+                                        img(src='../img/testimonial-image.jpg')
+                                    .testimonial-name 
+                                        span Will Powerless - 
+                                            em CEO
+                        ol.carousel-indicators.hidden-xs.hidden-sm.hidden-md.hidden-lg
+                            li.active(data-target='#carousel-example-generic', data-slide-to='0')
+                            li(data-target='#carousel-example-generic', data-slide-to='1')
+
+                        a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+                        a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+    #home-partners.pt-80.pb-70
+        .container
+            .row
+                .col-md-12
+                    .title-container
+                        h2.title.text-center Our Affiliated Partners
+                    .sub-title-container.text-center.mb-30
+                        h5.sub-title.text-center Authorisations & Approvals
+                .col-md-12.text-center
+                    ul.partner-list.p-0
+                        li
+                            img(src="../img/partners/gas-safe.jpg")
+                        li
+                            img(src="../img/partners/logic-certification.jpg")
+                        li
+                            img(src="../img/partners/nic-eic.jpg")
+                        li
+                            img(src="../img/partners/oftec.jpg")
+
+                .col-md-12.text-center
+                    .divider
+                    .sub-title-container.text-center.mb-30
+                        h5.sub-title.text-center.nb Memberships
+                    ul.partner-list.p-0
+                        li
+                            img(src="../img/partners/idhee.jpg")
+                        li
+                            img(src="../img/partners/ciphe.jpg")
+                        li
+                            img(src="../img/partners/lanarkshire.jpg")
+                        li
+                            img(src="../img/partners/igem.jpg")
+                        li
+                            img(src="../img/partners/itol.jpg")
+
+                .col-md-12.text-center
+                    .divider
+                    .sub-title-container.text-center.mb-30
+                        h5.sub-title.text-center.nb Working Relationships
+                    ul.partner-list.p-0
+                        li
+                            img(src="../img/partners/sime.jpg")
+                        li
+                            img(src="../img/partners/baxi.jpg")
+                        li
+                            img(src="../img/partners/grant.jpg")
+                        li
+                            img(src="../img/partners/mcdonald.jpg")
+                    ul.partner-list.p-0.mb-0
+                        li
+                            img(src="../img/partners/fernox.jpg")
+                        li
+                            img(src="../img/partners/drayton.jpg")
+                        li
+                            img(src="../img/partners/honeywell.jpg")        
