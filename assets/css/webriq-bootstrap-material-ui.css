@@ -529,19 +529,52 @@ figure.effect-goliath:hover p {
   transform: translate3d(0,0,0);
 }
 
-@media (min-width:355px) and (max-width:568px){
+@media (max-width:344px){
+  figure.effect-goliath h4 {
+    -webkit-transform: translate3d(0,-88px,0)!important;
+    transform: translate3d(0,-88px,0) !important;
+  }
+  figure.effect-goliath:hover h4 {
+    -webkit-transform: translate3d(0,-88px,0)!important;
+    transform: translate3d(0,-88px,0)!important;
+  }
+  
+}
+
+@media (max-width:767px){
+  figure.effect-goliath h4 {
+    -webkit-transform: translate3d(0,-68px,0);
+    transform: translate3d(0,-68px,0);
+  }
+  figure.effect-goliath p {
+    opacity:1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
   figure.effect-goliath:hover h4 {
     -webkit-transform: translate3d(0,-68px,0);
     transform: translate3d(0,-68px,0);
   }
-}
-@media (min-width:569px) and (max-width:640px){
-  figure.effect-goliath:hover h4 {
-    -webkit-transform: translate3d(0,-50px,0);
-    transform: translate3d(0,-50px,0);
+  
+  figure.effect-goliath:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   }
 }
-@media (min-width:641px) and (max-width:991px){
+
+@media (min-width:558px) and (max-width:640px){
+  figure.effect-goliath h4 {
+    -webkit-transform: translate3d(0,-49px,0);
+    transform: translate3d(0,-49px,0);
+  }
+  figure.effect-goliath:hover h4 {
+    -webkit-transform: translate3d(0,-49px,0);
+    transform: translate3d(0,-49px,0);
+  }
+}
+
+@media (min-width:768px) and (max-width:991px){
   figure.effect-goliath:hover h4 {
     -webkit-transform: translate3d(0,-68px,0);
     transform: translate3d(0,-68px,0);
