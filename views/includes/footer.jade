@@ -35,13 +35,13 @@ section#footer-layout-box
                     li
                         a(href="/") Gas Course
                     li
-                        a(href="/course-enquiries") Electrical Course
+                        a(href="/") Electrical Course
                     li
-                        a(href="/affiliated-links") Energy Course
+                        a(href="/") Energy Course
                     li
-                        a(href="/downloads") Oil Course
+                        a(href="/") Oil Course
                     li
-                        a(href="/contact-us") Water Courses
+                        a(href="/") Water Courses
                     li
                         a(href="/") Safety Audits Course
                     li
@@ -84,6 +84,22 @@ script.
         });
         $( ".effect-goliath" ).click(function() {
           $( ".effect-goliath p").slideToggle( "slow" );
+        });
+         $(function(){
+          function stripTrailingSlash(str) {
+          if(str.substr(-1) == '/') {
+          return str.substr(0, str.length - 1);
+          }
+          return str;
+          }
+          var url = window.location.pathname;
+          var activePage = stripTrailingSlash(url);
+          $('.nav li a').each(function(){
+          var currentPage = stripTrailingSlash($(this).attr('href'));
+          if (activePage == currentPage) {
+          $(this).parent().addClass('active');
+          }
+          });
         });
     });
 

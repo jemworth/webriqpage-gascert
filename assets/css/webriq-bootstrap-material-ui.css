@@ -226,7 +226,6 @@ ol li{padding-left:15px;margin-bottom:15px;}
 }
 .showcase-list > div img{
   width:100%;
-  height:100%;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
@@ -423,7 +422,6 @@ ol li{padding-left:15px;margin-bottom:15px;}
 .grid figure img {
   position: relative;
   display: block;
-  min-height: 100%;
   width: 100%;
   opacity: 1;
 }
@@ -10933,7 +10931,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.5;
   color: inherit;
 }
 
@@ -10959,8 +10957,8 @@ h6 .small,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 24px;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 h1 small,
@@ -10978,8 +10976,8 @@ h3 .small, .h3 small,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 h4 small,
@@ -11019,7 +11017,7 @@ h6, .h6 {
 }
 
 p {
-  margin: 0 0 12px;
+  margin: 0 0 20px;
 }
 
 .lead {
@@ -20160,7 +20158,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color:#212121;
-  line-height: 1.1;
+  line-height: 1.5;
 }
 
 /*** Header Styles ***/
