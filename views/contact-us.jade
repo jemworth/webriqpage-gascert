@@ -3,4 +3,75 @@ extends general-layout
 block content
 
     .container
-        h2 Underconstruction
+
+        .row
+            .col-md-5.col-sm-6.contact-info
+                .title-container
+                    h2.title.mb-15 Contact Info
+                    hr.mt-10
+                ul.normal-list.list-1.pl-0
+                    li
+                        i.mdi.mdi-phone
+                        span 
+                            strong Phone
+                            | 01698 828222
+                    li
+                        i.mdi.mdi-email
+                        span 
+                            strong Email
+                            a(href='mailto:enquiries@gascert.co.uk') enquiries@gascert.co.uk
+                div(style="clear:both;")
+                hr
+                ul.normal-list.list-2.pl-0
+                    li
+                        i.mdi.mdi-map-marker
+                        span 
+                            strong Address
+                            | Unit 37, Block 5, Third Road, Blantyre Industrial Estate, Blantyre G72 0UP
+                hr
+                ul.main-social-media.pl-0
+                    li
+                        a(href='/')
+                          i.mdi.mdi-facebook
+                    li
+                        a(href='/')
+                          i.mdi.mdi-twitter
+                    li
+                        a(href='/')
+                          i.mdi.mdi-google-plus
+
+            .col-md-1
+            .col-md-6.col-sm-6
+                .title-container
+                    h2.title.mb-15 Send A Message
+                    hr.mt-10
+                p Please fill in our contact form below and we will reply as soon as we can.
+                .form-column
+                    form(name='contact', action='thank-you', netlify)
+                        .row
+                            .col-md-12
+                                .eq-ui-form-group.eq-ui-input-field
+                                    input(id="full_name", class="eq-ui-input", type='text', name='name')
+                                    label(for='full_name') Full Name:
+
+                            .col-md-12
+                                .eq-ui-form-group.eq-ui-input-field
+                                    input(id="email", class="eq-ui-input", type='email', name='email')
+                                    label(for="email",data-error="wrong",data-success="right") Email:
+
+                            .col-md-12
+                                .eq-ui-form-group.eq-ui-input-field
+                                    input(id="telephone", class="eq-ui-input", type='text', name='telephone')
+                                    label(for='telephone') Telephone:
+
+                            .col-md-12
+                                .eq-ui-form-group.eq-ui-input-field
+                                    textarea#message.eq-ui-textarea(name='message',rows='1')
+                                    label(for='message') Message:
+
+                            .col-md-12
+                                .g-recaptcha(data-sitekey='6Ldx5QYUAAAAAJnVNLQPG3elIjSvWWkch6TAXPcq')
+
+                            .col-md-12
+                                .eq-ui-form-group.eq-ui-input-field
+                                    button.btn.btn-primary.eq-ui-waves-light.mb-0 Send             

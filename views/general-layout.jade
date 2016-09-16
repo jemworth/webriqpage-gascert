@@ -29,8 +29,15 @@ html
     section.cover-slider
       include includes/cover-slider
 
-    section.main-container.pt-80.pb-80
+    section.main-container.pt-70.pb-70
       block content
+
+    if _path == "/contact-us.html"
+      hr.mt-0
+      .container
+        .title-container
+          h2.title.text-center.mt-20.mb-50 Our Location On Map
+      #map
 
     footer#footer
       include includes/footer
