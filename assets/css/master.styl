@@ -1,4 +1,5 @@
 @import '_settings'
+@import '_list'
 
 normalize-css()
 base()
@@ -211,6 +212,67 @@ body
         font-size 15px
         color #727272
 
+.contact-info 
+    
+    ul.list-1 li
+        display table
+        float left
+        width 50%
+
+        i,span
+          display table-cell
+          vertical-align top
+
+    ul li 
+        
+        i
+            font-size 24px
+            color #03a9f4
+            padding-right 18px
+
+        span a
+          color #727272
+
+        i.mdi.mdi-phone
+            padding 0
+            
+        strong
+            display block
+            color #212121
+            
+    ul.list-2 li
+        display table
+
+        i,span
+          display table-cell
+          vertical-align top
+          
+    .main-social-media 
+        
+        li
+            display inline-block
+        
+            a
+                border 1px solid #b3e5fc
+                padding 10px 7px 6px 7px !important
+                margin-right 5px
+                border-radius  50%
+                font-size 18px
+
+                i
+                    padding 0 !important
+
+            a:hover
+                border 1px solid #03a9f4
+                background #03a9f4
+                color #fff !important
+                
+                i
+                  color:#fff
+                  
+#map 
+    width 100%
+    height 500px
 
 @media (min-width:640px)
 
